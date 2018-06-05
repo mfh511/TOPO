@@ -5,6 +5,10 @@
 Two directly connected switches plus a host for each switch:
 
    switch  --- switch --- switch 
+   /   \                 /     \
+ switch switch         switch  switch 
+  /     \ /    \         /    \  /    \
+Host Host Host Host    Host  Host Host Host
 
 Adding the 'topos' dict with a key/value pair to generate our newly defined
 topology enables one to pass in '--topo=mytopo' from the command line.
